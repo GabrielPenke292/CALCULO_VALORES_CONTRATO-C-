@@ -39,7 +39,7 @@ namespace CALCULO_VALORES_CONTRATO.entities
 
         public double totalValue()
         {
-            return valuePerHour * valuePerHour;
+            return valuePerHour * hours;
         }
 
     }
