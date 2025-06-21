@@ -14,5 +14,10 @@ namespace CALCULO_VALORES_CONTRATO.entities
             get { return name; } 
             set { name = value; }
         }
+
+        public Department(string name)
+        {
+            this.name = name;
+        }
     }
 }
