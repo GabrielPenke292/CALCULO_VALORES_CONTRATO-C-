@@ -1,4 +1,4 @@
-namespace CALCULO_VALORES_CONTRATO.entities
+namespace CALCULO_VALORES_CONTRATO.entities.enums
 {
     public enum WorkerLevel
     {
