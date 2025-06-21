@@ -65,11 +65,15 @@ namespace CALCULO_VALORES_CONTRATO.entities
             contracts.Remove(contract);
         }
 
-        public double income(int year, int month){
+        public double Income(int year, int month)
+        {
             double sum = baseSalary;
-            foreach (HourContract contract in contracts)
+            
+            foreach (HourContract contract in Contracts)
             {
-                if (contract.Date.Year == year && contract.Date.Month == month)
+                DateTime contractDate = contract.Date;
+                
+                if (contractDate.Year == year && contractDate.Month == month)
                 {
                     sum += contract.totalValue();
                 }
